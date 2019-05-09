@@ -23,11 +23,11 @@ categories: Hexo
 
 - 打开`putty`，在`Host Name`中输入服务器的`IP`地址，在`Saved Sessions`里面取一个这个`IP`的名字，点击`Save`，这样子在白色框内会出现`IP`名字，下次双击直接进入即可
 
-![2]()
+![2](http://blog.panxiandiao.com/2.png)
 
 - 输入登录名以及密码，登录名默认为`root`，注意密码的输入不会显示出来，输入完密码回车出现这样的页面说明连接成功啦
 
-![3]()
+![3](http://blog.panxiandiao.com/3.png)
 
 ## 服务器常见工具以及软件的安装
 
@@ -51,7 +51,8 @@ categories: Hexo
 >Node.js 你可以理解为一种用JS去写后端程序的框架，语法和JS是一样的，所以它对前端工程师来说是友好的，前端工程师不需要再去掌握另一种比如PHP、Java这样的语法
 
 1. [点击进入Node下载页面](https://nodejs.org/en/download/)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;右击复制链接
-![4]()
+
+![4](http://blog.panxiandiao.com/4.png)
 
 ```Linux
     cd ~ // 返回home目录
@@ -110,27 +111,27 @@ categories: Hexo
 
 1. 打开阿里云控制台，点击安全组配置
 
-![1]()
+![1](http://blog.panxiandiao.com/1.png)
 
 2. 点击配置规则之后你会发现80端口没有配置，点击右上角添加安全组规则
 
-![5]()
+![5](http://blog.panxiandiao.com/5.png)
 
 当你看到`Nginx`欢迎页面的时候，就说明你成功啦
 
-![6]()
+![6](http://blog.panxiandiao.com/6.png)
 
 3. 这里就有一个问题了，我们看到的这个页面上的`html,css`内容是存放在哪里呢，我们去找找到`sites-enabled`目录（只有在`sites-enabled`目录下的配置文件才能够真正被用户访问），打开这个文件夹，你会发现一个名为`default`的文件
 
-![7]()
+![7](http://blog.panxiandiao.com/7.png)
 
 - 用`vim`编辑查看`default`的内容我们可以发现网站的根目录
 
-![8]()
+![8](http://blog.panxiandiao.com/8.png)
 
 - 那我们就顺藤摸瓜进入网站根目录瞅瞅
 
-![9]()
+![9](http://blog.panxiandiao.com/9.png)
 
 - 这就是`Nginx`整个欢迎页面的内容文件
 
@@ -161,7 +162,7 @@ categories: Hexo
     cp -r ~/myhexo/public/ /var/www/html // 替换网站根目录（那个欢迎界面就被替换掉啦）
 ```
 
-![10]()
+![10](http://blog.panxiandiao.com/10.png)
 
 看到这个就说明博客部署成功！！！
 
@@ -169,7 +170,7 @@ categories: Hexo
  
 1. 在`github`中添加仓库
 
-![11]()
+![11](http://blog.panxiandiao.com/11.png)
 
 打钩代表在仓库生成一个`markdown`文件，用来描述你的仓库
 

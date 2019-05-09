@@ -32,7 +32,7 @@ categories: Linux
 
 ### 起始符的理解
 
-![24]()
+![24](http://blog.panxiandiao.com/24.jpg)
 
 1. root: 当前登录用户（这里也就是管理员）
 
@@ -56,7 +56,7 @@ categories: Linux
 
 接下来解释`ls -l`命令下每一列输出的含义（`ll` = `ls -l`）
 
-![25]()
+![25](http://blog.panxiandiao.com/25.jpg)
 
 第一列代表这个文件的权限，总共有十位
 
@@ -65,11 +65,11 @@ categories: Linux
 
 第三四五列分别代表所有者，所属组，其他人
 
-![26]()
+![26](http://blog.panxiandiao.com/26.jpg)
 
 第二列我们把它称为引用计数，代表文件被调用过几次
 
-![27]()
+![27](http://blog.panxiandiao.com/27.jpg)
 
 时间的列代表文件最后被修改的时间
 
@@ -81,7 +81,7 @@ categories: Linux
 
 -p 递归创建在我们建立二级目录时要用到
 
-![28]()
+![28](http://blog.panxiandiao.com/28.jpg)
 
 ### 切换所在目录：cd
 
@@ -141,45 +141,45 @@ categories: Linux
 
 ## 常见目录的作用
 
-![29]()
+![29](http://blog.panxiandiao.com/29.png)
 
-![30]()
+![30](http://blog.panxiandiao.com/30.png)
 
 根目录下的`bin`和`sbin`,`usr`目录下的`bin`和`sbin`，这四个目录都是用来保存系统命令的
 
 **两个`bin`目录下的命令所有人都可以执行，两个`sbin`目录下的命令则是超级用户才能执行，`Linux`是这样的方法来区分用户权限的**
 
-![31]()
+![31](http://blog.panxiandiao.com/31.png)
 
 系统的启动目录，不能随便操作，写满的话系统跑不起来
 
-![32]()
+![32](http://blog.panxiandiao.com/32.png)
 
 特殊文件保存目录，里面大部分都是硬件文件，不能随便操作
 
-![33]()
+![33](http://blog.panxiandiao.com/33.png)
 
 系统默认的配置文件的目录，后面学习一些服务的时候讲多次运用到这个目录
 
-![34]()
+![34](http://blog.panxiandiao.com/34.png)
 
 `home`是普通用户的家目录，`root`是超级用户的家目录
 
-![35]()
+![35](http://blog.panxiandiao.com/35.png)
 
 `lib`是我们`Linux`中函数库的保存位置，在操作系统中，并不是把所有的功能全部写到了`Linux`当中，他把一些常用的功能写成了一个个程序库，都保存在`lib`下，有需要直接调用即可，免得全部写在`Linux`中让`Linux`显得很笨重并且缓慢
 
 **以上目录对新手来讲不需要来进行操作**
 
-![36]()
+![36](http://blog.panxiandiao.com/36.png)
 
 这两个目录是空目录，我们无论在什么系统中，存储软件只有在挂载之后才能使用，挂载我们可以当做分配盘符，系统给你空目录就是作为你外接存储设备的盘符，`media`是用来挂光盘的，`mnt`是用来挂U盘的
 
-![37]()
+![37](http://blog.panxiandiao.com/37.png)
 
 `proc`和`sys`目录类似，这两个目录保存的是内存的过载点，也就是说这两个目录是内存的盘符，这两个目录中的数据直接写在了内存当中，假设系统重启，数据就会丢失，如果写的数据占满内存，那么系统就会崩溃，所以不能直接操作
 
-![38]()
+![38](http://blog.panxiandiao.com/38.png)
 
 `tmp`是临时目录，有一些临时数据可以放在这里
 
@@ -199,7 +199,7 @@ categories: Linux
 
 `locate`是按照配置文件来进行搜索的，我们编辑`/etc/updatedb.conf`里面看看
 
-![41]()
+![41](http://blog.panxiandiao.com/41.png)
 
 - `PRUNE_BIND_MOUNTS = "yes"`代表开启搜索限制
 - `PRUNEFS =`代表搜索时，不搜索的文件系统
@@ -214,7 +214,7 @@ categories: Linux
 
 我们来试一下搜索`install.log`文件
 
-![48]()
+![48](http://blog.panxiandiao.com/48.png)
 
 我们会在搜索的过程中发现这条命令执行的时间特别就久，因为搜索范围是整个根目录，所以我们要避免大范围搜索，会非常耗费系统资源
 
@@ -226,15 +226,15 @@ categories: Linux
 
 **注意要把输入的内容用双引号括起来，否则不能识别**
 
-![49]()
+![49](http://blog.panxiandiao.com/49.png)
 
 我们在当前目录下创建`abc`和`abd`文件
 
-![50]()
+![50](http://blog.panxiandiao.com/50.png)
 
 当然我们可以混合使用
 
-![51]()
+![51](http://blog.panxiandiao.com/51.png)
 
 代表的是搜索以`c`结尾，以`d`结尾的文件
 
@@ -262,7 +262,7 @@ categories: Linux
 
 在文件中找到有包含输入字符串的行输出（若选项是`-v`那么就是没有包含字符串的行）
 
-![52]()
+![52](http://blog.panxiandiao.com/52.jpg)
 
 **`find`命令与`grep`命令的区别**
 
@@ -277,7 +277,7 @@ categories: Linux
 
 我们来看看`ls`的帮助
 
-![53]()
+![53](http://blog.panxiandiao.com/53.jpg)
 
 我们发现第一行`LS(1)`，这是`man`的帮助级别
 
@@ -295,13 +295,13 @@ categories: Linux
 
 `man -f 命令` 相当于 `whatis 命令`
 
-![54]()
+![54](http://blog.panxiandiao.com/54.jpg)
 
 查看哪个级别的帮助文件把`f`改成级数就可以了
 
 **这时候你们有没有发现这个命令跟我们之前学的`whereis`命令很像？**
 
-![55]()
+![55](http://blog.panxiandiao.com/55.jpg)
 
 **其实完全可以用`whereis`去判断命令有哪些帮助文件**
 
@@ -309,7 +309,7 @@ categories: Linux
 
 `man -K 命令` 相当于 `apropos 命令`
 
-![56]()
+![56](http://blog.panxiandiao.com/56.jpg)
 
 只要在帮助文档里出现我们输入的命令相关的关键字，全部都会列出来
 
@@ -317,7 +317,7 @@ categories: Linux
 
 - 命令 --help
 
-![57]()
+![57](http://blog.panxiandiao.com/57.jpg)
 
 在只想看选项帮助，不看其他信息用这个命令
 
@@ -401,7 +401,7 @@ categories: Linux
 
 时间的值可以`now`代表立马关机，也可以是一个具体的时间，代表系统在你指定的时间关机，我们假定指定凌晨`5：30`关机，我们会发现一个问题，会卡着操作不了了
 
-![58]()
+![58](http://blog.panxiandiao.com/58.png)
 
 按下`ctrl+c`终止退出，这时候我们可以在那条命令后面加一个后台符`&`，代表后台运行，如果想让后台这个任务终止，可以执行`shutdown -c`终止任务
 
@@ -419,7 +419,7 @@ categories: Linux
 
 我们用`runlevel`查询当前系统运行级别
 
-![59]()
+![59](http://blog.panxiandiao.com/59.png)
 
 `N`代表上一次所在级别，`3`代表目前所在级别，这里的意思是到现在系统一直是`3`级别
 
@@ -429,7 +429,7 @@ categories: Linux
     cat/etc/inittab
 ```
 
-![60]()
+![60](http://blog.panxiandiao.com/60.png)
 
 修改对应级数即可（**切记不能把级数写成零或者六，系统一开机就会关机或者一开机就会重启**）
 

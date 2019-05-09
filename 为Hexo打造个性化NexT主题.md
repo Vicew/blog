@@ -32,7 +32,7 @@ categories: Hexo
 
 **如何在这么多字段中快速定位`theme`字段？输入反斜杠后面接你想要查找的关键词，回车即可，小写的 n 查找下一个，大写的 N 查找上一个**
 
-![12]()
+![12](http://blog.panxiandiao.com/12.png)
 
 当你浏览器打开出现这个界面时，就说明你成功啦，当然你可以选择不同类型的外 Scheme ，这只是`NexT`默认的`Scheme-Muse`,目前`NexT`支持三种`Scheme`，他们是：
 
@@ -40,13 +40,13 @@ categories: Hexo
 > - Mist - Muse 的紧凑版本，整洁有序的单栏外观
 > - Pisces - 双栏 Scheme，小家碧玉似的清新
 
-![13]()
+![13](http://blog.panxiandiao.com/13.png)
 
 ## 项目根目录基础配置 
 
 ### 设置语言，选用简体中文
 
-![14]()
+![14](http://blog.panxiandiao.com/14.png)
 
 其他语言的代码大家可以了解一下
 
@@ -73,13 +73,13 @@ categories: Hexo
 
 ### 设置作者昵称
 
-![15]()
+![15](http://blog.panxiandiao.com/15.jpg)
 
 ### 站点描述
 
 站点描述可以是你喜欢的一句签名
 
-![16]()
+![16](http://blog.panxiandiao.com/16.jpg)
 
 ## 主题配置文件
 
@@ -87,13 +87,13 @@ categories: Hexo
 
 在网上找到一个自己喜欢的头像，复制链接地址
 
-![17]()
+![17](http://blog.panxiandiao.com/17.jpg)
 
 ### 设置侧栏
 
 默认情况下，侧栏仅在文章页面（拥有目录列表）时才显示，并放置于右侧位置。根据自己喜欢设置
 
-![18]()
+![18](http://blog.panxiandiao.com/18.png)
 
 设置侧栏显示的时机，修改`sidebars.display`的值，支持的选项有：
 
@@ -102,7 +102,7 @@ categories: Hexo
 > - hide - 在所有页面中都隐藏（可以手动展开）
 > - remove - 完全移除
 
-![19]()
+![19](http://blog.panxiandiao.com/19.jpg)
 
 ### 设置菜单
 
@@ -129,22 +129,22 @@ categories: Hexo
 
 - 编辑该目录下的`index.md`文件，将页面的类型设置为`categories`
 
-![20]()
+![20](http://blog.panxiandiao.com/20.png)
 
 - 同时编辑主题配置文件`_config.yml`，添加`categories`到`menu`中就完成了，其他创建方法一样
 
-![21]()
+![21](http://blog.panxiandiao.com/21.png)
 
 ### 侧边栏设置返回顶部，并且显示百分比
 
 找到`sidebar`字段，设置`scrollpercent`的值为`true`
 
-![22]()
+![22](http://blog.panxiandiao.com/22.png)
 
 ### 设置 阅读全文
 
 找到`auto_excerpt`字段，设置`enable`的值为`true`
 
-![23]()
+![23](http://blog.panxiandiao.com/23.png)
 
 可根据自己情况自由设置显示内容的长短`length`的大小

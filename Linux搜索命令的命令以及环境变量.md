@@ -16,7 +16,7 @@ categories: Linux
 
 我们查一下ls命令的具体信息
 
-![42]()
+![42](http://blog.panxiandiao.com/42.png)
 
 左边的就是命令所在的路径，右边的就是帮助文档
 
@@ -26,7 +26,7 @@ categories: Linux
 
 我们看看ls
 
-![43]()
+![43](http://blog.panxiandiao.com/43.jpg)
 
 第一行代表我们实际执行的是`ls --color=auto`表示`ls`会支持颜色显示，显示方案是自动显示
 
@@ -38,16 +38,16 @@ categories: Linux
 
 那我们来理解一下`cd`不在这些目录这句话的含义，我们首先理解一下**环境变量**
 
-![44]()
+![44](http://blog.panxiandiao.com/44.jpg)
 
 在`linux`中，要想执行脚本，执行文件，执行命令，只有一种方法，就是用绝对路径，刚刚我们查到了`ls`命令在`bin`目录下，也就是说我们要打`bin`下的`ls`才能执行
 
-![45]()
+![45](http://blog.panxiandiao.com/45.jpg)
 
 但是这样做很不方便，所以系统给我们开发出了`PATH`环境变量，就是我们定义用户操作环境的变量，比如我们`Windows`用户定义分辨率，桌面背景，这些都是操作环境。我们输入`echo $PATH`来显示当前的环境变量
 
-![46]()
+![46](http://blog.panxiandiao.com/46.jpg)
 
 该变量的值由一系列以冒号分隔的目录名组成，如果我们执行ls命令，并且在当前目录下找不到ls命令的执行文件或者脚本，那么他就会在PATH指定的路径中去搜索，看看有没有哪个目录下会有，在/bin 目录下找到了，成功执行。如果所有路径下都没找到，那么就是命令不存在
 
-![47]()
+![47](http://blog.panxiandiao.com/47.jpg)
