@@ -25,6 +25,8 @@ categories: Nginx
 
 我们在`sites-available`创建一个你要管理的站点并且软链到`sites-enabled`，我们在`sites-enabled`中编辑配置
 
+## 编辑配置文件
+
 ![配置](http://blog.panxiandiao.com/20190512191902.png)
 
 最后别忘了重启`Nginx`
