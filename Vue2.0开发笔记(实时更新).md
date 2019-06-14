@@ -10,4 +10,4 @@ categories: Vue2.0
 3. `fastclick.attach(document.body)`就是让`body`下所有的按钮的点击都没有延时
 4. 别名的配制
 5. `router-link tag="div"`这个tag的意思是把和这个连接渲染成`div`，默认本来是`a`
-6. 
+6. `Jsonp`解决跨域问题，他发送的不是`ajax`请求,他是动态创建了一个 &#60;script&#62;这个标签不受同源策略的限制
