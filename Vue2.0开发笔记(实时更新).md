@@ -21,4 +21,5 @@ categories: Vue2.0
 14. ![better-scroll配制](http://blog.panxiandiao.com/20190616181146.png)
 15. 初始化better-scroll的时候它会拷贝开头一份放在结尾，结尾一份放在开头
 16. :class {} true的时候实现样式
-17. 
+17. 组件里面有计时器这种资源的时候，在组件销毁的时候要对计时器进行清理，有利于内存的释放
+18. 
