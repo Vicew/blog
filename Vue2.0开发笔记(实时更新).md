@@ -24,3 +24,6 @@ categories: Vue2.0
 17. 组件里面有计时器这种资源的时候，在组件销毁的时候要对计时器进行清理，有利于内存的释放
 18. 请求头`host refer`限制访问权限，可以通过后端代理来解决修改请求头
 19. :冒号里面可以是js表达式可以是数字等等，没有冒号就仅仅代表一个变量
+20. `npx eslint --ext .js,.vue --ignore-path .gitignore --ignore-path .eslintignore .`显示错误格式的文件（ESLINT）
+21. `npx eslint --ext .js,.vue --ignore-path .gitignore --ignore-path .eslintignore . --fix`整个项目更正
+22. 
