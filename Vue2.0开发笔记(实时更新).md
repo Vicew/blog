@@ -19,7 +19,7 @@ categories: Vue2.0
 12. 通过 `Prop` 向子组件传递数据
 13. 为什么要用`slot`?既然你用了子组件，你为什么要给她传一些dom，直接去定义复用的子组件不就好了。后来想想觉得一个复用的组件在不同的地方只有些许变化，如果去重写子组件是很不明智的一件事，当然也可以将不同之处都写在子组件里，然后通过父组件传来的标识进行选择显示。其实质是对子组件的扩展，通过slot插槽向组件内部指定位置传递内容，即将\<slot\>\</slot\>元素作为承载分发内容的出口；
 14. ![better-scroll配制](http://blog.panxiandiao.com/20190616181146.png)
-15. 初始化better-scroll的时候它会拷贝开头一份放在结尾，结尾一份放在开头
+15. 初始化`better-scroll`的时候它会拷贝开头一份放在结尾，结尾一份放在开头
 16. :class {} true的时候实现样式
 17. 组件里面有计时器这种资源的时候，在组件销毁的时候要对计时器进行清理，有利于内存的释放
 18. 请求头`host refer`限制访问权限，可以通过后端代理来解决修改请求头
@@ -28,4 +28,8 @@ categories: Vue2.0
 21. `npx eslint --ext .js,.vue --ignore-path .gitignore --ignore-path .eslintignore . --fix`整个项目更正
 22. vscode的自身语法检查有问题，一般都把 `"javascript.validate.enable": false`禁用默认的 js 验证，所以采用了`ESlint`.
 23. window.reload是重新加载当前需要的所有内容，也就包括页面和后台的代码，此过程中实际上是从后台重新进行操作；window.Refresh是刷新，保留之前的缓存内容，重新加载页面，之前存在的东西不会动，没加载上来的东西继续加载，也会去加载后台代码内容的
-24. 
+24. `box-sizing: border-box;`整个盒子除了`margin`的大小就是设置长宽的大小，`content，border,padding`嵌入里面
+25. `jusify-content: center;`实现水平居中 `align-items: center;` 实现垂直居中
+26. `created:html`加载完成之前，执行。执行顺序：父组件-子组件,`mounted:html`加载完成后执行。执行顺序：子组件-父组件
+27. `@load` 图片有值的时候就加载 `onload`事件是在`src`的资源加载完毕的时候，才会触发
+28. ``内用$来将连接字符串
