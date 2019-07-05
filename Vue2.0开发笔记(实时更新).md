@@ -37,7 +37,11 @@ categories: Vue2.0
 30. 父级模板里的所有内容都是在父级作用域中编译的；子模板里的所有内容都是在子作用域中编译的
 31. 使用 data-* 属性来嵌入自定义数据
 32. ref 加在普通的元素上，用this.$refs.（ref值） 获取到的是dom元素.ref 加在子组件上，用this.$refs.（ref值） 获取到的是组件实例，可以使用组件的所有方法。在使用方法的时候直接this.$refs.（ref值）.方法（） 就可以使用了。
-33. `$emit` [didi](https://blog.csdn.net/sllailcp/article/details/78595077)
+33. `$emit` [点此进](https://blog.csdn.net/sllailcp/article/details/78595077)
 34. 字符&指向父选择器
 35. `watch question: function (newQuestion, oldQuestion) {}`
-36. 
+36. 基础组件没业务逻辑（按钮点击的话就派发）
+37. 解决路由复杂数据传递（vuex）或者很多的组件共享数据
+38. payload [点此进](https://www.jianshu.com/p/1bd78ccab7d2)
+39. `import * as`会将若干export导出的内容组合成一个对象返回
+40. es6解构赋值 `let {musicData} = item`相当于`let musicData = item.musicData`
