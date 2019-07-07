@@ -45,3 +45,6 @@ categories: Vue2.0
 38. payload [点此进](https://www.jianshu.com/p/1bd78ccab7d2)
 39. `import * as`会将若干export导出的内容组合成一个对象返回
 40. es6解构赋值 `let {musicData} = item`相当于`let musicData = item.musicData`
+41. `:bg-image="bgImage"`
+42. css在vue中自动prefix,js的话要自己实现，利用浏览器能力检测
+43. `getters.js`中也能写计算属性
