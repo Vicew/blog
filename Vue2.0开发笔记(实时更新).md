@@ -48,3 +48,8 @@ categories: Vue2.0
 41. `:bg-image="bgImage"`
 42. css在vue中自动prefix,js的话要自己实现，利用浏览器能力检测
 43. `getters.js`中也能写计算属性
+44. `click.stop`阻止冒泡，适用于父元素的点击事件
+45. 标志位解决点击速度过快audio异步出错的问题
+46. 在移动端上点击屏幕时，会依次触发touchstart,touchmove,touchend,click事件。可以通过`preventDefault`来解决事件的默认行为
+47. SVG有空在看下  viewbox  width height r cx cy
+48. `Math.random()`是令系统随机选取大于等于 0.0 且小于 1.0 的伪随机 double 值
