@@ -53,3 +53,6 @@ categories: Vue2.0
 46. 在移动端上点击屏幕时，会依次触发touchstart,touchmove,touchend,click事件。可以通过`preventDefault`来解决事件的默认行为
 47. SVG有空在看下  viewbox  width height r cx cy
 48. `Math.random()`是令系统随机选取大于等于 0.0 且小于 1.0 的伪随机 double 值
+49. ！important 可以覆盖style的值
+50. `computed和methods`我们为什么需要缓存？假设我们有一个性能开销比较大的计算属性 A，它需要遍历一个巨大的数组并做大量的计算。然后我们可能有其他的计算属性依赖于 A 。如果没有缓存，我们将不可避免的多次执行 A 的 getter！如果你不希望有缓存，请用方法来替代。虽然计算属性在大多数情况下更合适，但有时也需要一个自定义的侦听器。这就是为什么 Vue 通过 watch 选项提供了一个更通用的方法，来响应数据的变化。当需要在数据变化时执行异步或开销较大的操作时，这个方式是最有用的。
+51. 
