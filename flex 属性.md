@@ -90,3 +90,6 @@ flex-grow 和 flex-shrink 都设为0代表 不按照父容器进行收缩扩展
 ![flex-grow:1](http://blog.panxiandiao.com/20190902213427.png)
 
 那么我们自然而然的就想到对中间元素设置`flex-grow:1`，那么这个元素就会占满父容器的剩余空间啦~
+
+<iframe width="100%" height="300" src="//jsfiddle.net/AntBody/138zf8kk/embedded/" allowpaymentrequest allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
