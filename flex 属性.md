@@ -92,10 +92,30 @@ flex-grow 和 flex-shrink 都设为0代表 不按照父容器进行收缩扩展
 那么我们自然而然的就想到对中间元素设置`flex-grow:1`，那么这个元素就会占满父容器的剩余空间啦~
 
 {% raw %}
-
-Toggle
-hello
-
-<script> new Vue({ el: '#demo', data: { show: true } }) </script> <style> .demo-transition-enter-active, .demo-transition-leave-active { transition: opacity .5s } .demo-transition-enter, .demo-transition-leave-to { opacity: 0 } </style> {% endraw %}
+<div id="demo">
+  <button v-on:click="show = !show">
+    Toggle
+  </button>
+  <transition name="demo-transition">
+    <p v-if="show">hello</p>
+  </transition>
+</div>
+<script>
+new Vue({
+  el: '#demo',
+  data: {
+    show: true
+  }
+})
+</script>
+<style>
+.demo-transition-enter-active, .demo-transition-leave-active {
+  transition: opacity .5s
+}
+.demo-transition-enter, .demo-transition-leave-to {
+  opacity: 0
+}
+</style>
+{% endraw %}
 
 333
