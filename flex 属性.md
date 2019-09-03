@@ -101,6 +101,7 @@ flex-grow 和 flex-shrink 都设为0代表 不按照父容器进行收缩扩展
   </transition>
 </div>
 <script>
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
 new Vue({
   el: '#demo',
   data: {
