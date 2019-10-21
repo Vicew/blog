@@ -82,3 +82,9 @@ initialValue （作为第一次调用 callback 的第一个参数）
 ```
 
 well done!
+
+再来一个reduce的栗子叭，也是面试笔试经常会遇到的数组拍平
+
+![reduce,...]](http://blog.panxiandiao.com//20191021142251.png)
+
+用到了reduce,用到了扩展运算符，运用到了递归，是不是很高大上呢，嘿嘿

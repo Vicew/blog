@@ -1,0 +1,22 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "blog的package",
+  "main": "test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vicew/blog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vicew/blog/issues"
+  },
+  "homepage": "https://github.com/Vicew/blog#readme",
+  "dependencies": {
+    "lodash": "^4.17.15"
+  }
+}
