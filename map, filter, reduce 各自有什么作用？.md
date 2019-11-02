@@ -27,6 +27,16 @@ categories: JavaScript
 - 第二轮遍历 parseInt('2', 1) -> NaN
 - 第三轮遍历 parseInt('3', 2) -> NaN
 
+这里记录一个实战中遇到的栗子
+
+![map](http://blog.panxiandiao.com//20191102180221.png)
+
+要求对每个数组中的对象添加一个和detail相同的字段child，并且在child中复制step字段为name字段
+
+![resolove]](http://blog.panxiandiao.com//20191102180447.png)
+
+**注意，箭头函数中返回对象需要加括号哟**
+
 ## filter
 
 `filter` 的作用也是生成一个新数组，在遍历数组的时候将返回值为 `true` 的元素放入新数组，我们可以利用这个函数删除一些不需要的元素
