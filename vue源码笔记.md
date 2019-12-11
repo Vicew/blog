@@ -25,3 +25,10 @@ categories: Vue2.0
 
 传入参数可以是一个dom元素也可以是一个字符串，字符串的话就去执行`document.querySelector`都是获得一个dom对象，因为挂载是覆盖，所以下面判断不能直接挂载到html和body标签上。有模板用outerhtml拿到dom字符串 ，没有的话就在外面包一层div返回，编译相关后面讲。vue只认render函数，没有的话就把模板编译转换成render函数，然后执行$mount函数，执行mountComponent函数，only版本必须要render函数，vm._render()渲染vnode，hydrating服务端渲染,这个函数看new Watcher,把函数赋值给getter，执行get，在try中执行getter 。视图修改等等都会被监听到，然后重新执行mountComponent函数，执行了一次渲染，更新vnode等等。
 
+## render
+
+直接替换dom call中的renderProxy设置拦截器判断模版是否被定义
+
+## virtual DOM
+
+参考了snabbdom 函数柯里化数据驱动执行一次`patch:function`后再也不用判断属于哪种平台类型了 创建当前节点和子节点 最后挂载到父节点并且替换
