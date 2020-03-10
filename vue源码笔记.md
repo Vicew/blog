@@ -19,7 +19,7 @@ categories: Vue2.0
 
 把方法缓存到mount中并且重新定义$mount方法，缓存的方法是在`runtime index.js`中定义
 
-![index]](http://blog.panxiandiao.com//20191007160852.png)
+![index](http://blog.panxiandiao.com//20191007160852.png)
 
 为什么要在入口从新定义一遍这个函数，因为我们这个是compiler的版本，在`init.js`进行挂载的时候执行的就是入口的函数，only版本没有入口的那些逻辑，就是给only版本复用的，我们来看具体实现
 
