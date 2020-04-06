@@ -56,3 +56,13 @@ categories: Vue2.0
 49. ！important 可以覆盖style的值
 50. `computed和methods`我们为什么需要缓存？假设我们有一个性能开销比较大的计算属性 A，它需要遍历一个巨大的数组并做大量的计算。然后我们可能有其他的计算属性依赖于 A 。如果没有缓存，我们将不可避免的多次执行 A 的 getter！如果你不希望有缓存，请用方法来替代。虽然计算属性在大多数情况下更合适，但有时也需要一个自定义的侦听器。这就是为什么 Vue 通过 watch 选项提供了一个更通用的方法，来响应数据的变化。当需要在数据变化时执行异步或开销较大的操作时，这个方式是最有用的。
 51. 因为v-show无论如何都会渲染，如果在一些场景下很难出现，那么使用v-if。如果是一些固定的，条件内容都不怎么会改变的，频繁切换的，使用v-show会比较省性能。如果是子组件，每次切换子组件不执行生命周期，使用v-show，如果子组件需要重新执行生命周期，那么使用v-if才能触发。
+52. 初始化从父到子，渲染完从子到父 beforeUpdate 和 updated ,beforeDestroy 和destroyed同理
+53. 自定义事件就是vue实例来实现非父子通讯，$on,$emit,$off在beforeDestroy生命周期中销毁
+54. ![具名插槽](http://blog.panxiandiao.com/20200312181828.png)，作用域插槽  父组件可以获取子组件的对应的data值
+55. ![动态组件](http://blog.panxiandiao.com/20200312183134.png)
+56. ![异步加载组件](http://blog.panxiandiao.com/20200312230505.png)异步加载组件，用的时候才会加载出来
+57. ![mixin](http://blog.panxiandiao.com/20200312231401.png) ![mixin](http://blog.panxiandiao.com/20200312231815.png) ![mixin](http://blog.panxiandiao.com/20200312231912.png) 缺点：变量来源不明确，不利于阅读。多mixin可能会造成命名冲突。mixin和组件可能出现多对多的关系，复杂度较高
+58. ![vdome](http://blog.panxiandiao.com/20200314003403.png)
+59. ![树diff的时间复杂](http://blog.panxiandiao.com/20200316211114.png)![优化时间复杂度到O（n）](http://blog.panxiandiao.com/20200316211253.png)![tag不同，则直接删掉重建，不再深度比较](http://blog.panxiandiao.com/20200316211332.png)
+60. ![with语法](http://blog.panxiandiao.com/20200316220505.png)
+61. ![get setter](http://blog.panxiandiao.com/20200316230555.png)![更新过程](http://blog.panxiandiao.com/20200316230911.png)![完整流程图](http://blog.panxiandiao.com/20200316231145.png)
