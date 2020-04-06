@@ -1,5 +1,5 @@
 ---
-title: Nginx域名重定向
+title: node学习笔记
 date: 2020-02-22 16:55:38
 tags: server
 categories: server
