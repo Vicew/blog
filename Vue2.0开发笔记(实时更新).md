@@ -66,3 +66,4 @@ categories: Vue2.0
 59. ![树diff的时间复杂](http://blog.panxiandiao.com/20200316211114.png)![优化时间复杂度到O（n）](http://blog.panxiandiao.com/20200316211253.png)![tag不同，则直接删掉重建，不再深度比较](http://blog.panxiandiao.com/20200316211332.png)
 60. ![with语法](http://blog.panxiandiao.com/20200316220505.png)
 61. ![get setter](http://blog.panxiandiao.com/20200316230555.png)![更新过程](http://blog.panxiandiao.com/20200316230911.png)![完整流程图](http://blog.panxiandiao.com/20200316231145.png)
+62. ![自定义v-model](http://blog.panxiandiao.com/20200430193647.png)
