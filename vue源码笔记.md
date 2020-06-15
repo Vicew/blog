@@ -11,7 +11,7 @@ categories: Vue2.0
 
 首先拿到在data对象（推荐写成函数的形式）,是函数就转化对象赋值给vm._data，也就是挂载到vm下，不是对象的话就报警告，下面用object.keys来获得对象数组来和props中的对象数组做比较，因为这两个中的对象都是挂载到vm下的，重复了就报一个错，下去就到了最重要的proxy代理函数了，传入vm,_data,和转换过后的数组下标key，进行对应的set和get操作～～
 
-## 实力挂载的实现
+## 实例挂载的实现
 
 `entry-runtime-with-compiler.js`
 
