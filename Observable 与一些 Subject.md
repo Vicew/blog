@@ -9,7 +9,7 @@ categories: Rxjs
 
 在介绍它们之前，我们先来看下这四种Subject与普通Observable的区别：
 
-![区别对照](blog.panxiandiao.com/20200611144240.png)
+![区别对照](http://blog.panxiandiao.com/20200628102635.png)
 
 ## Cold vs Hot
 
