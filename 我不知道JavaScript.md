@@ -407,4 +407,4 @@ for 循环头部的 let 声明还会有一
 
 ## 闭包
 
-闭包问题请参照 [点此进](http://www.panxiandiao.com/2019/05/21/JS%20%E9%97%AD%E5%8C%85/)
+闭包问题请参照我的另一篇博客 [点此进](http://www.panxiandiao.com/2019/05/21/JS%20%E9%97%AD%E5%8C%85/)
