@@ -521,3 +521,38 @@ let p2: PointInstanceType;
 上例中最后的类型 Point 和类型 PointInstanceType 是等价的。
 
 同样的，在接口继承类的时候，也只会继承它的实例属性和实例方法。
+
+## extends keyof
+
+## 内置工具类型Partial
+
+Partial 作用是将传入的属性变为可选项.
+首先我们需要理解两个关键字 keyof 和 in, keyof 可以用来取得一个对象接口的所有 key 值.
+比如
+
+```typescript
+interface Foo {
+  name: string;
+  age: number
+}
+type T = keyof Foo // -> "name" | "age"
+```
+
+而 in 则可以遍历枚举类型, 例如
+
+```typescript
+type Keys = "a" | "b"
+type Obj =  {
+  [p in Keys]: any
+} // -> { a: any, b: any }
+```
+
+keyof 产生联合类型, in 则可以遍历枚举类型, 所以他们经常一起使用, 看下 Partial 源码
+
+```typescript
+type Partial<T> = {
+  [P in keyof T]?: T[P];
+};
+```
+
+用来将T中的所有属性变成可选的
